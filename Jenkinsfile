@@ -15,7 +15,7 @@ pipeline {
 		stage("Build image") {
 			steps {
 				script {
-					myapp = docker.build("jdentu/hello:${env.BUILD_ID}")
+					myapp = docker.build("jdentu/raheelrepo:${env.BUILD_ID}")
 				}
 			}
 		}
